@@ -19,4 +19,4 @@ with tab_lineales:
     pestana_lineales.mostrar()
 
 with tab_no_lineales:
-    st.info("Próximamente: Newton-Raphson, punto fijo y comparación de despejes.")
+    pestanas_no_lineales.mostrar()
