@@ -54,6 +54,8 @@ def mostrar(ctx):
     R = ctx["R"]
     tn, yn = R["t"][ctx["nodos"]], R["y"][ctx["nodos"]]
 
+    st.title("Interpolación de Lagrange: reconstrucción de caudal diario")
+
     # 1. Contexto ------------------------------------------------------------
     st.header("1. Contexto en ingeniería civil")
     st.markdown(
