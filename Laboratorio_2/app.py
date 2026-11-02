@@ -6,6 +6,7 @@ Ejecutar con:  streamlit run app.py
 import streamlit as st
 
 import pestana_lineales
+import pestana_no_lineales
 
 st.set_page_config(page_title="Métodos numéricos en ingeniería civil", layout="wide")
 
