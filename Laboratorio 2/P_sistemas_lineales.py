@@ -1,5 +1,6 @@
 """Pestaña de sistemas lineales: equilibrio y reacciones en apoyos (ingeniería civil)."""
 
+import math
 import matplotlib.pyplot as plt
 import pandas as pd
 import streamlit as st
