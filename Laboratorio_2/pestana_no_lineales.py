@@ -164,7 +164,7 @@ def _interpretar(n, metodo, tol, hist, sol, mensaje, c, P,
 
 
 def mostrar():
-
+    st.title("Sistemas no lineales: estructuras con grandes deformaciones")
     # 1. Contexto ------------------------------------------------------------
     st.header("1. Contexto en ingeniería civil")
     st.markdown(
