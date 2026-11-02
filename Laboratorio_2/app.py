@@ -19,4 +19,4 @@ with tab_lineales:
     pestana_lineales.mostrar()
 
 with tab_no_lineales:
-    pestanas_no_lineales.mostrar()
+    pestana_no_lineales.mostrar()
