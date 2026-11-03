@@ -29,11 +29,16 @@ Si deseas ejecutar la aplicación localmente en tu equipo, asegúrate de estar u
    py -m streamlit run app.py
 
 ### Opción B: Abrir la terminal directamente en la carpeta
-Abre el explorador de archivos y entra a la carpeta Laboratorio_2.
+- Abre el explorador de archivos y entra a la carpeta `Laboratorio_2`.
 
-Haz clic derecho sobre la carpeta app y selecciona "Abrir en Terminal" (o "Abrir PowerShell aquí").
+- Haz clic derecho sobre la carpeta app y selecciona "Abrir en Terminal" (o "Abrir PowerShell aquí").
 
-Ejecuta el comando:
+- Ejecuta el comando:
+   ```powershell
+   python -m streamlit run app.py
+
+Una vez ejecutado el comando, el navegador web se abrirá automáticamente en la dirección:
+   `http://localhost:8501`
 
 
 
