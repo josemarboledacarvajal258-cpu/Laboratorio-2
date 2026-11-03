@@ -7,7 +7,7 @@ Este repositorio contiene la aplicación web interactiva **"Métodos numéricos 
 ## 🌐 1. Ejecución Directa (Nube)
 La forma más rápida de acceder al aplicativo web es a través del enlace directo publicado en la sección superior de la portada de este repositorio (*About / Website*) o haciendo clic en el siguiente botón:
 
-👉 **[Abrir Aplicativo Web en Streamlit Cloud](https://laboratorio-2-qh5u5ssznrzuoabck9sqyg.streamlit.app/)**
+👉 **[Abrir Aplicativo Web en Streamlit Cloud](https://laboratorio-2-jjflahsoplk7qgjzejjahd.streamlit.app/)**
 
 ---
 
