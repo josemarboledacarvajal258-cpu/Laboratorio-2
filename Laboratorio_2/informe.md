@@ -98,10 +98,7 @@ x_2 \\
 \vdots \\
 x_n
 \end{bmatrix}
-$$
-=
-$$
-\begin{bmatrix}
+= \begin{bmatrix}
 b_1 \\
 b_2 \\
 \vdots \\
