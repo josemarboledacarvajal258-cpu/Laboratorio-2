@@ -20,7 +20,7 @@ Si deseas ejecutar la aplicación localmente en tu equipo, asegúrate de estar u
    ```powershell
    cd "ruta\a\tu\repositorio\Laboratorio_2\app"
 
-Ejecuta el servidor local de Streamlit con uno de los siguientes comandos (según la configuración de tu entorno de Python):
+2. Ejecuta el servidor local de Streamlit con uno de los siguientes comandos (según la configuración de tu entorno de Python):
 
 python -m streamlit run app.py
 
