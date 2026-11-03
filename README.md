@@ -16,14 +16,26 @@ La forma más rápida de acceder al aplicativo web es a través del enlace direc
 Si deseas ejecutar la aplicación localmente en tu equipo, asegúrate de estar ubicado en la carpeta `app` (ubicada dentro del directorio principal `Laboratorio_2`).
 
 ### Opción A: Desde PowerShell o CMD (Ruta estándar)
-1. Navega hasta la carpeta `app` usando el comando `cd`:
+- Navega hasta la carpeta `app` usando el comando `cd`:
    ```powershell
    cd "ruta\a\tu\repositorio\Laboratorio_2\app"
 
-2. Ejecuta el servidor local de Streamlit con uno de los siguientes comandos (según la configuración de tu entorno de Python):
+- Ejecuta el servidor local de Streamlit con uno de los siguientes comandos (según la configuración de tu entorno de Python):
+   ```powershell
+   python -m streamlit run app.py
 
-```powershell
-python -m streamlit run app.py
+- Si el comando anterior no responde, intenta con:
+   ```powershell
+   py -m streamlit run app.py
+
+### Opción B: Abrir la terminal directamente en la carpeta
+Abre el explorador de archivos y entra a la carpeta Laboratorio_2.
+
+Haz clic derecho sobre la carpeta app y selecciona "Abrir en Terminal" (o "Abrir PowerShell aquí").
+
+Ejecuta el comando:
+
+
 
 
 
