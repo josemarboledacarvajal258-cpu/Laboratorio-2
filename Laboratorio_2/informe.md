@@ -994,44 +994,43 @@ $$
 
 **Condiciones de frontera para spline natural:**
 
-$$
+```math
 M_0 = 0 \quad ; \quad M_2 = 0
-$$
+```
 
 **Ecuaciones de los momentos:**
 
-$$
+```math
 h_{i-1} M_{i-1} + 2(h_{i-1} + h_i) M_i + h_i M_{i+1} = 6 \left[ \frac{y_{i+1} - y_i}{h_i} - \frac{y_i - y_{i-1}}{h_{i-1}} \right]
-$$
+```
 
 Nodo interior $i = 1$:
 
-$$
+```math
 h_0 M_0 + 2(h_0 + h_1) M_1 + h_1 M_2 = 6 \left[ \frac{y_2 - y_1}{h_1} - \frac{y_1 - y_0}{h_0} \right]
-$$
+```
 
-$$
+```math
 (1)(0) + 2(1 + 1) M_1 + (1)(0) = 6 \left[ \frac{0 - 1}{1} - \frac{1 - 0}{1} \right]
-$$
+```
 
-$$
+```math
 4 M_1 = 6(-1 - 1) \quad \Rightarrow \quad 4 M_1 = -12 \quad \Rightarrow \quad \mathbf{M_1 = -3}
-$$
+```
 
 ---
 
-**Fórmula del tramo** $`S_i(x)`$:
+**Fórmula del tramo** $S_i(x)$:
 
-$$
+```math
 S_i(x) = \frac{M_i (x_{i+1} - x)^3}{6 h_i} + \frac{M_{i+1} (x - x_i)^3}{6 h_i} + \left( y_i - \frac{M_i h_i^2}{6} \right) \frac{x_{i+1} - x}{h_i} + \left( y_{i+1} - \frac{M_{i+1} h_i^2}{6} \right) \frac{x - x_i}{h_i}
-$$
+```
 
-Para $`i = 0`$, es decir, $`x \in [0, 1]`$:
+Para $i = 0$, es decir, $x \in [0, 1]$:
 
-$$
+```math
 S_0(x) = \frac{0(1 - x)^3}{6(1)} + \frac{-3(x - 0)^3}{6(1)} + \left( 0 - \frac{0(1)^2}{6} \right) (1 - x) + \left( 1 - \frac{-3(1)^2}{6} \right) x
-$$
-
+```
 $$
 S_0(x) = -\frac{3 x^3}{6} + \left( 1 + \frac{1}{2} \right) x \quad \Rightarrow \quad \mathbf{S_0(x) = -\frac{1}{2} x^3 + \frac{3}{2} x}
 $$
