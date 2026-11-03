@@ -397,6 +397,7 @@ Este tiene diversas aplicaciones, como se explicó anteriormente, este es utiliz
 Este se agregó dentro de la aplicación, en la pestaña de sistemas no lineales para dar un criterio de confianza para los calculos realizados por el programa. 
 
 ---
+
 ## Los datos
 
 Para la aplicación práctica utilicé el caudal medio diario (parámetro 00060, estadístico 00003, en $\text{ft}^3/\text{s}$) de la estación USGS 01646500 (Potomac River near Washington, DC) para el año 2025, consultado el 2 de noviembre de 2026 mediante el servicio Daily Values de NWIS.
