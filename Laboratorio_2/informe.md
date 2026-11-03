@@ -234,23 +234,20 @@ $$
 
 - **Paso 1: Armar la Jacobiana $J(x,y)$**
   Derivar cada función respecto a cada variable:
-  
-  $$
-  J(x,y) = \begin{bmatrix} 
-  \frac{\partial f_1}{\partial x} & \frac{\partial f_1}{\partial y} \\[6pt]
-  \frac{\partial f_2}{\partial x} & \frac{\partial f_2}{\partial y} 
-  \end{bmatrix}
-  $$
 
-- **Paso 2: Evaluar en el punto actual**
-  Reemplazar las coordenadas de tu punto inicial $(x_0, y_0)$ en las funciones $f_1, f_2$ y en la matriz Jacobiana $J$.
+  ```math
+  J(x,y) = \begin{bmatrix}
+  \frac{\partial f_1}{\partial x} & \frac{\partial f_1}{\partial y} \\
+  \frac{\partial f_2}{\partial x} & \frac{\partial f_2}{\partial y}
+  \end{bmatrix}
+  ```
 
 - **Paso 3: Encontrar los incrementos ($\Delta x, \Delta y$)**
   Resolver el sistema de ecuaciones lineales:
-  
-  $$
+
+  ```math
   J \cdot \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix} = -\begin{bmatrix} f_1 \\ f_2 \end{bmatrix}
-  $$
+  ```
 
 - **Paso 4: Actualizar y repetir**
   Sumar los incrementos del punto anterior para obtener $(x_1, y_1)$. Si los incrementos son casi cero (menores a una tolerancia establecida), el método se detiene ya que ha econtrado una solución.
