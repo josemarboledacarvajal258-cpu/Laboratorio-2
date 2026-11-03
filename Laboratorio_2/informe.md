@@ -817,220 +817,253 @@ $$
 
 ### Interpolación de Lagrange
 
-**7.** $(x_0, y_0) = (1, 2) \quad;\quad (x_1, y_1) = (3, 6) \quad;\quad (x_2, y_2) = (4, 24)$[cite: 11, 28]
+**7.** Dados $(x_0, y_0) = (1, 2)$ ; $(x_1, y_1) = (3, 6)$ ; $(x_2, y_2) = (4, 24)$.
 
-Construir los polinomios base de Lagrange y evaluar en $x = 2$[cite: 11, 28].
+Construir los polinomios base de Lagrange y evaluar en $x = 2$.
 
 $$
 L_i(x) = \prod_{j \neq i} \frac{x - x_j}{x_i - x_j}
-$$[cite: 12, 28]
+$$
 
-* **Cálculo de $L_0(x)$:**[cite: 28]
-  $$
-  L_0(x) = \frac{(x - x_1)(x - x_2)}{(x_0 - x_1)(x_0 - x_2)} = \frac{(x - 3)(x - 4)}{(1 - 3)(1 - 4)} = \frac{(x - 3)(x - 4)}{(-2)(-3)} \implies \mathbf{L_0(x) = \frac{(x - 3)(x - 4)}{6}}
-  $$[cite: 28]
+- **Cálculo de $L_0(x)$:**
 
-* **Cálculo de $L_1(x)$:**[cite: 28]
   $$
-  L_1(x) = \frac{(x - x_0)(x - x_2)}{(x_1 - x_0)(x_1 - x_2)} = \frac{(x - 1)(x - 4)}{(3 - 1)(3 - 4)} = \frac{(x - 1)(x - 4)}{(2)(-1)} \implies \mathbf{L_1(x) = -\frac{(x - 1)(x - 4)}{2}}
-  $$[cite: 28]
+  L_0(x) = \frac{(x - x_1)(x - x_2)}{(x_0 - x_1)(x_0 - x_2)} = \frac{(x - 3)(x - 4)}{(1 - 3)(1 - 4)} = \frac{(x - 3)(x - 4)}{(-2)(-3)}
+  $$
 
-* **Cálculo de $L_2(x)$:**[cite: 28]
   $$
-  L_2(x) = \frac{(x - x_0)(x - x_1)}{(x_2 - x_0)(x_2 - x_1)} = \frac{(x - 1)(x - 3)}{(4 - 1)(4 - 3)} = \frac{(x - 1)(x - 3)}{(3)(1)} \implies \mathbf{L_2(x) = \frac{(x - 1)(x - 3)}{3}}
-  $$[cite: 28]
+  \Rightarrow \quad \mathbf{L_0(x) = \frac{(x - 3)(x - 4)}{6}}
+  $$
+
+- **Cálculo de $L_1(x)$:**
+
+  $$
+  L_1(x) = \frac{(x - x_0)(x - x_2)}{(x_1 - x_0)(x_1 - x_2)} = \frac{(x - 1)(x - 4)}{(3 - 1)(3 - 4)} = \frac{(x - 1)(x - 4)}{(2)(-1)}
+  $$
+
+  $$
+  \Rightarrow \quad \mathbf{L_1(x) = -\frac{(x - 1)(x - 4)}{2}}
+  $$
+
+- **Cálculo de $L_2(x)$:**
+
+  $$
+  L_2(x) = \frac{(x - x_0)(x - x_1)}{(x_2 - x_0)(x_2 - x_1)} = \frac{(x - 1)(x - 3)}{(4 - 1)(4 - 3)} = \frac{(x - 1)(x - 3)}{(3)(1)}
+  $$
+
+  $$
+  \Rightarrow \quad \mathbf{L_2(x) = \frac{(x - 1)(x - 3)}{3}}
+  $$
 
 ---
 
-**Construcción y evaluación del polinomio $P_2(x)$:**[cite: 29]
+**Construcción y evaluación del polinomio $P_2(x)$:**
 
 $$
-P_2(x) = \sum_{i=0}^{2} y_i L_i(x) \implies P_2(x) = y_0 L_0(x) + y_1 L_1(x) + y_2 L_2(x)
-$$[cite: 12, 29]
+P_2(x) = \sum_{i=0}^{2} y_i L_i(x) = y_0 L_0(x) + y_1 L_1(x) + y_2 L_2(x)
+$$
 
 $$
 P_2(x) = 2 \left[ \frac{(x - 3)(x - 4)}{6} \right] + 6 \left[ -\frac{(x - 1)(x - 4)}{2} \right] + 24 \left[ \frac{(x - 1)(x - 3)}{3} \right]
-$$[cite: 29]
+$$
 
 $$
 P_2(x) = \frac{(x - 3)(x - 4)}{3} - 3(x - 1)(x - 4) + 8(x - 1)(x - 3)
-$$[cite: 29]
+$$
 
 $$
 P_2(x) = \frac{x^2 - 7x + 12}{3} - 3(x^2 - 5x + 4) + 8(x^2 - 4x + 3)
-$$[cite: 29]
+$$
 
 $$
 \mathbf{P_2(x) = \frac{16}{3} x^2 - \frac{58}{3} x + 16}
-$$[cite: 11, 29]
+$$
 
-**Evaluado en $x = 2$:**[cite: 11, 29]
+**Evaluado en $x = 2$:**
 
 $$
-P_2(2) = \frac{16}{3}(2)^2 - \frac{58}{3}(2) + 16 = -\frac{4}{3} \implies \mathbf{P_2(2) = -1.33333}
-$$[cite: 11, 29]
+P_2(2) = \frac{16}{3}(2)^2 - \frac{58}{3}(2) + 16 = -\frac{4}{3} \quad \Rightarrow \quad \mathbf{P_2(2) = -1.33333}
+$$
 
 ---
 
-**8.** Construir el polinomio de Lagrange con 2 nodos: $(x_0, y_0) = (2, 5)$ y $(x_1, y_1) = (5, 11)$, evaluar en $x = 3$.[cite: 11, 29]
+**8.** Construir el polinomio de Lagrange con 2 nodos: $(x_0, y_0) = (2, 5)$ y $(x_1, y_1) = (5, 11)$, y evaluar en $x = 3$.
 
-* **Cálculo de $L_0(x)$:**[cite: 29]
+- **Cálculo de $L_0(x)$:**
+
   $$
   L_0(x) = \frac{x - x_1}{x_0 - x_1} = \frac{x - 5}{2 - 5} = \frac{5 - x}{3}
-  $$[cite: 29]
+  $$
 
-* **Cálculo de $L_1(x)$:**[cite: 29]
+- **Cálculo de $L_1(x)$:**
+
   $$
   L_1(x) = \frac{x - x_0}{x_1 - x_0} = \frac{x - 2}{5 - 2} = \frac{x - 2}{3}
-  $$[cite: 29]
+  $$
 
-* **Construcción de $P_1(x)$:**[cite: 29]
+- **Construcción de $P_1(x)$:**
+
   $$
   P_1(x) = y_0 L_0(x) + y_1 L_1(x) = 5 L_0(x) + 11 L_1(x)
-  $$[cite: 29]
+  $$
 
   $$
-  P_1(x) = 5 \left( \frac{5 - x}{3} \right) + 11 \left( \frac{x - 2}{3} \right) = \frac{25 - 5x + 11x - 22}{3} = \frac{6x + 3}{3} \implies \mathbf{P_1(x) = 2x + 1}
-  $$[cite: 11, 29]
+  P_1(x) = 5 \left( \frac{5 - x}{3} \right) + 11 \left( \frac{x - 2}{3} \right) = \frac{25 - 5x + 11x - 22}{3} = \frac{6x + 3}{3}
+  $$
 
-**Evaluado en $x = 3$:**[cite: 11, 29, 30]
+  $$
+  \Rightarrow \quad \mathbf{P_1(x) = 2x + 1}
+  $$
+
+**Evaluado en $x = 3$:**
 
 $$
 \mathbf{P_1(3) = 2(3) + 1 = 7}
-$$[cite: 11, 29, 30]
+$$
 
 ---
 
-**9.** Con 4 nodos: $(0, 1), (1, 2), (2, 5), (3, 10)$. Construir la base $L_1(x)$ y evaluar $P_3(1)$ para comprobación del nodo.[cite: 11, 30]
+**9.** Con 4 nodos: $(0, 1), (1, 2), (2, 5), (3, 10)$. Construir la base $L_1(x)$ y evaluar $P_3(1)$ para comprobación del nodo.
 
-* **Cálculo de $L_1(x)$:**[cite: 30]
+- **Cálculo de $L_1(x)$:**
+
   $$
-  L_1(x) = \frac{(x - x_0)(x - x_2)(x - x_3)}{(x_1 - x_0)(x_1 - x_2)(x_1 - x_3)} = \frac{(x - 0)(x - 2)(x - 3)}{(1 - 0)(1 - 2)(1 - 3)} = \frac{x(x - 2)(x - 3)}{(1)(-1)(-2)} \implies \mathbf{L_1(x) = \frac{x(x - 2)(x - 3)}{2}}
-  $$[cite: 30]
-
-* **Propiedad Delta de Kronecker ($L_i(x_j) = \delta_{ij}$):**[cite: 12, 30]
+  L_1(x) = \frac{(x - x_0)(x - x_2)(x - x_3)}{(x_1 - x_0)(x_1 - x_2)(x_1 - x_3)} = \frac{(x - 0)(x - 2)(x - 3)}{(1 - 0)(1 - 2)(1 - 3)} = \frac{x(x - 2)(x - 3)}{(1)(-1)(-2)}
   $$
-  L_1(x) = \begin{cases} 1 & \text{si } i = j \\ 0 & \text{si } i \neq j \end{cases}
-  $$[cite: 30]
 
-  * $x = 1 \implies L_1(1) = \frac{1(1 - 2)(1 - 3)}{2} = 1$[cite: 30]
-  * $x = 0 \implies L_1(0) = 0$[cite: 30]
-  * $x = 2 \implies L_1(2) = 0$[cite: 30]
-  * $x = 3 \implies L_1(3) = 0$[cite: 30]
+  $$
+  \Rightarrow \quad \mathbf{L_1(x) = \frac{x(x - 2)(x - 3)}{2}}
+  $$
 
-* **Evaluación de $P_3(1)$:**[cite: 30]
+- **Propiedad delta de Kronecker:**
+
+  $$
+  L_i(x_j) = \delta_{ij} = \begin{cases} 1 & \text{si } i = j \\ 0 & \text{si } i \neq j \end{cases}
+  $$
+
+  - $x = 1 \Rightarrow L_1(1) = \dfrac{1(1 - 2)(1 - 3)}{2} = 1$
+  - $x = 0 \Rightarrow L_1(0) = 0$
+  - $x = 2 \Rightarrow L_1(2) = 0$
+  - $x = 3 \Rightarrow L_1(3) = 0$
+
+- **Evaluación de $P_3(1)$:**
+
   $$
   P_3(1) = y_0 L_0(1) + y_1 L_1(1) + y_2 L_2(1) + y_3 L_3(1)
-  $$[cite: 30]
+  $$
 
   $$
-  P_3(1) = 1(0) + 2(1) + 5(0) + 10(0) \implies \mathbf{P_3(1) = 2 = y_1}
-  $$[cite: 11, 30]
+  P_3(1) = 1(0) + 2(1) + 5(0) + 10(0) \quad \Rightarrow \quad \mathbf{P_3(1) = 2 = y_1}
+  $$
 
 ---
 
 ### Newton Interpolador y Spline
 
-**10.** Construir la tabla de diferencias divididas de Newton para los puntos $(1, 1), (2, 4), (3, 9)$ y escribir el polinomio resultante.[cite: 12, 31]
+**10.** Construir la tabla de diferencias divididas de Newton para los puntos $(1, 1), (2, 4), (3, 9)$ y escribir el polinomio resultante.
 
-**Cálculo de Diferencias Divididas:**[cite: 31]
+**Cálculo de diferencias divididas:**
 
 $$
 f[x_i, x_{i+1}] = \frac{f(x_{i+1}) - f(x_i)}{x_{i+1} - x_i}
-$$[cite: 31]
+$$
 
-* $f[x_0, x_1] = \frac{4 - 1}{2 - 1} = 3$[cite: 31]
-* $f[x_1, x_2] = \frac{9 - 4}{3 - 2} = 5$[cite: 31]
-* $f[x_0, x_1, x_2] = \frac{f[x_1, x_2] - f[x_0, x_1]}{x_2 - x_0} = \frac{5 - 3}{3 - 1} = \frac{2}{2} = 1$[cite: 31]
+- $f[x_0, x_1] = \dfrac{4 - 1}{2 - 1} = 3$
+- $f[x_1, x_2] = \dfrac{9 - 4}{3 - 2} = 5$
+- $f[x_0, x_1, x_2] = \dfrac{f[x_1, x_2] - f[x_0, x_1]}{x_2 - x_0} = \dfrac{5 - 3}{3 - 1} = \dfrac{2}{2} = 1$
 
-| $x_i$ | $f(x_i)$ | $1^\text{er}$ Orden | $2^\text{do}$ Orden |
+| $x_i$ | $f(x_i)$ | 1.er orden | 2.do orden |
 | :---: | :---: | :---: | :---: |
 | 1 | 1 | 3 | 1 |
 | 2 | 4 | 5 | |
 | 3 | 9 | | |
 
-[cite: 31]
-
-**Construcción del Polinomio $P_2(x)$:**[cite: 31]
+**Construcción del polinomio $P_2(x)$:**
 
 $$
 P_2(x) = f[x_0] + f[x_0, x_1](x - x_0) + f[x_0, x_1, x_2](x - x_0)(x - x_1)
-$$[cite: 31]
+$$
 
 $$
 P_2(x) = 1 + 3(x - 1) + 1(x - 1)(x - 2)
-$$[cite: 31]
+$$
 
 $$
-P_2(x) = 1 + 3x - 3 + x^2 - 3x + 2 \implies \mathbf{P_2(x) = x^2}
-$$[cite: 12, 31]
+P_2(x) = 1 + 3x - 3 + x^2 - 3x + 2 \quad \Rightarrow \quad \mathbf{P_2(x) = x^2}
+$$
 
 ---
 
-**11.** Con el polinomio anterior con puntos $(1, 1), (2, 4), (3, 9)$, incorporar el nuevo nodo $(x_3, y_3) = (4, 16)$.[cite: 12, 31]
+**11.** Con el polinomio anterior, con puntos $(1, 1), (2, 4), (3, 9)$, incorporar el nuevo nodo $(x_3, y_3) = (4, 16)$.
 
-* $f[x_0] = 1 \quad;\quad f[x_0, x_1] = 3 \quad;\quad f[x_0, x_1, x_2] = 1$[cite: 31]
-* $f[x_2, x_3] = \frac{16 - 9}{4 - 3} = 7$[cite: 31]
-* $f[x_1, x_2, x_3] = \frac{f[x_2, x_3] - f[x_1, x_2]}{x_3 - x_1} = \frac{7 - 5}{4 - 2} = 1$[cite: 31]
-* $f[x_0, x_1, x_2, x_3] = \frac{f[x_1, x_2, x_3] - f[x_0, x_1, x_2]}{x_3 - x_0} = \frac{1 - 1}{4 - 1} = 0$[cite: 31]
+- $f[x_0] = 1$ ; $f[x_0, x_1] = 3$ ; $f[x_0, x_1, x_2] = 1$
+- $f[x_2, x_3] = \dfrac{16 - 9}{4 - 3} = 7$
+- $f[x_1, x_2, x_3] = \dfrac{f[x_2, x_3] - f[x_1, x_2]}{x_3 - x_1} = \dfrac{7 - 5}{4 - 2} = 1$
+- $f[x_0, x_1, x_2, x_3] = \dfrac{f[x_1, x_2, x_3] - f[x_0, x_1, x_2]}{x_3 - x_0} = \dfrac{1 - 1}{4 - 1} = 0$
 
-**Nuevo Polinomio $P_3(x)$:**[cite: 31]
+**Nuevo polinomio $P_3(x)$:**
 
 $$
 P_3(x) = f[x_0] + f[x_0, x_1](x - x_0) + f[x_0, x_1, x_2](x - x_0)(x - x_1) + f[x_0, x_1, x_2, x_3](x - x_0)(x - x_1)(x - x_2)
-$$[cite: 31]
+$$
 
 $$
 P_3(x) = 1 + 3(x - 1) + (x - 1)(x - 2) + 0(x - 1)(x - 2)(x - 3)
-$$[cite: 31]
+$$
 
 $$
-P_3(x) = 1 + 3x - 3 + x^2 - 3x + 2 \implies \mathbf{P_3(x) = x^2}
-$$[cite: 12, 31]
+P_3(x) = 1 + 3x - 3 + x^2 - 3x + 2 \quad \Rightarrow \quad \mathbf{P_3(x) = x^2}
+$$
 
 ---
 
-**12.** Para los puntos $(0, 0), (1, 1), (2, 0)$, me plantar y resolver el Spline Cúbico Natural.[cite: 12, 32]
+**12.** Para los puntos $(0, 0), (1, 1), (2, 0)$, plantear y resolver el spline cúbico natural.
 
-**Ancho de los intervalos:**[cite: 32]
-* $h_0 = x_1 - x_0 = 1 - 0 = 1$[cite: 32]
-* $h_1 = x_2 - x_1 = 2 - 1 = 1$[cite: 32]
+**Ancho de los intervalos:**
 
-**Condiciones de frontera para Spline Natural:**[cite: 12, 32]
+- $h_0 = x_1 - x_0 = 1 - 0 = 1$
+- $h_1 = x_2 - x_1 = 2 - 1 = 1$
+
+**Condiciones de frontera para spline natural:**
+
 $$
-M_0 = 0 \quad;\quad M_2 = 0
-$$[cite: 12, 32]
+M_0 = 0 \quad ; \quad M_2 = 0
+$$
 
-**Ecuaciones de los momentos ($h_{i-1} M_{i-1} + 2(h_{i-1} + h_i) M_i + h_i M_{i+1} = 6 \left[ \frac{y_{i+1} - y_i}{h_i} - \frac{y_i - y_{i-1}}{h_{i-1}} \right]$):**[cite: 32]
+**Ecuaciones de los momentos:**
 
-Nodo interior $i = 1$:[cite: 32]
+$$
+h_{i-1} M_{i-1} + 2(h_{i-1} + h_i) M_i + h_i M_{i+1} = 6 \left[ \frac{y_{i+1} - y_i}{h_i} - \frac{y_i - y_{i-1}}{h_{i-1}} \right]
+$$
+
+Nodo interior $i = 1$:
 
 $$
 h_0 M_0 + 2(h_0 + h_1) M_1 + h_1 M_2 = 6 \left[ \frac{y_2 - y_1}{h_1} - \frac{y_1 - y_0}{h_0} \right]
-$$[cite: 32]
+$$
 
 $$
 (1)(0) + 2(1 + 1) M_1 + (1)(0) = 6 \left[ \frac{0 - 1}{1} - \frac{1 - 0}{1} \right]
-$$[cite: 32]
+$$
 
 $$
-4 M_1 = 6(-1 - 1) \implies 4 M_1 = -12 \implies \mathbf{M_1 = -3}
-$$[cite: 12, 32]
+4 M_1 = 6(-1 - 1) \quad \Rightarrow \quad 4 M_1 = -12 \quad \Rightarrow \quad \mathbf{M_1 = -3}
+$$
 
 ---
 
-**Fórmula del tramo $S_i(x)$:**[cite: 32]
+**Fórmula del tramo $S_i(x)$:**
 
 $$
 S_i(x) = \frac{M_i (x_{i+1} - x)^3}{6 h_i} + \frac{M_{i+1} (x - x_i)^3}{6 h_i} + \left( y_i - \frac{M_i h_i^2}{6} \right) \frac{x_{i+1} - x}{h_i} + \left( y_{i+1} - \frac{M_{i+1} h_i^2}{6} \right) \frac{x - x_i}{h_i}
-$$[cite: 32]
+$$
 
-Para $i = 0$ ($x \in [0, 1]$):[cite: 32]
+Para $i = 0$ ($x \in [0, 1]$):
 
 $$
 S_0(x) = \frac{0(1 - x)^3}{6(1)} + \frac{-3(x - 0)^3}{6(1)} + \left( 0 - \frac{0(1)^2}{6} \right) (1 - x) + \left( 1 - \frac{-3(1)^2}{6} \right) x
-$$[cite: 32]
+$$
 
 $$
-S_0(x) = -\frac{3 x^3}{6} + \left( 1 + \frac{1}{2} \right) x \implies \mathbf{S_0(x) = -\frac{1}{2} x^3 + \frac{3}{2} x}
-$$[cite: 12, 32]
+S_0(x) = -\frac{3 x^3}{6} + \left( 1 + \frac{1}{2} \right) x \quad \Rightarrow \quad \mathbf{S_0(x) = -\frac{1}{2} x^3 + \frac{3}{2} x}
+$$
