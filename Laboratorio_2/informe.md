@@ -232,7 +232,7 @@ $$
 
 **Pasos para Resolver un Ejercicio en la Práctica**
 
-* **Paso 1: Armar la Jacobiana $J(x,y)$**
+- **Paso 1: Armar la Jacobiana $J(x,y)$**
   Derivar cada función respecto a cada variable:
   $$
   J(x,y) = \begin{bmatrix} 
@@ -241,16 +241,16 @@ $$
   \end{bmatrix}
   $$
 
-* **Paso 2: Evaluar en el punto actual**
+- **Paso 2: Evaluar en el punto actual**
   Reemplazar las coordenadas de tu punto inicial $(x_0, y_0)$ en las funciones $f_1, f_2$ y en la matriz Jacobiana $J$.
 
-* **Paso 3: Encontrar los incrementos ($\Delta x, \Delta y$)**
+- **Paso 3: Encontrar los incrementos ($\Delta x, \Delta y$)**
   Resolver el sistema de ecuaciones lineales:
   $$
   J \cdot \begin{bmatrix} \Delta x \\ \Delta y \end{bmatrix} = -\begin{bmatrix} f_1 \\ f_2 \end{bmatrix}
   $$
 
-* **Paso 4: Actualizar y repetir**
+- **Paso 4: Actualizar y repetir**
   Sumar los incrementos del punto anterior para obtener $(x_1, y_1)$. Si los incrementos son casi cero (menores a una tolerancia establecida), el método se detiene ya que ha econtrado una solución.
 
 El método de Newton-Raphson destaca por su rápida convergencia, cuando se realizaron los ejercicios manuales, se pudo observar que este método cumplió con la tolerancia en una iteración, máximo dos, aunque esto no se pueda asegurar que esto sea igual para todos los casos.
