@@ -273,7 +273,7 @@ $$
 **Paso 1: Armar la Jacobiana $J(x, y)$.** Derivar cada función respecto a cada variable:
 
 $$
-J(x, y) = \begin{bmatrix} \dfrac{\partial f_1}{\partial x} & \dfrac{\partial f_1}{\partial y} \\[6pt] \dfrac{\partial f_2}{\partial x} & \dfrac{\partial f_2}{\partial y} \end{bmatrix}
+J(x, y) = \begin{bmatrix} \dfrac{\partial f_1}{\partial x} & \dfrac{\partial f_1}{\partial y} \[6pt] \dfrac{\partial f_2}{\partial x} & \dfrac{\partial f_2}{\partial y} \end{bmatrix}
 $$
 
 **Paso 2: Evaluar en el punto actual.** Reemplazar las coordenadas de tu punto inicial $(x_0, y_0)$ en las funciones $f_1, f_2$ y en la matriz Jacobiana $J$.
