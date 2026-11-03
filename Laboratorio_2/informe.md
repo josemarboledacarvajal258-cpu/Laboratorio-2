@@ -826,95 +826,65 @@ $$
 L_i(x) = \prod_{j \neq i} \frac{x - x_j}{x_i - x_j}
 $$
 
-- **Cálculo de $L_0(x)$:**
-
-  $$
-  L_0(x) = \frac{(x - x_1)(x - x_2)}{(x_0 - x_1)(x_0 - x_2)} = \frac{(x - 3)(x - 4)}{(1 - 3)(1 - 4)} = \frac{(x - 3)(x - 4)}{(-2)(-3)}
-  $$
-
-  $$
-  \Rightarrow \quad \mathbf{L_0(x) = \frac{(x - 3)(x - 4)}{6}}
-  $$
-
-- **Cálculo de $L_1(x)$:**
-
-  $$
-  L_1(x) = \frac{(x - x_0)(x - x_2)}{(x_1 - x_0)(x_1 - x_2)} = \frac{(x - 1)(x - 4)}{(3 - 1)(3 - 4)} = \frac{(x - 1)(x - 4)}{(2)(-1)}
-  $$
-
-  $$
-  \Rightarrow \quad \mathbf{L_1(x) = -\frac{(x - 1)(x - 4)}{2}}
-  $$
-
-- **Cálculo de $L_2(x)$:**
-
-  $$
-  L_2(x) = \frac{(x - x_0)(x - x_1)}{(x_2 - x_0)(x_2 - x_1)} = \frac{(x - 1)(x - 3)}{(4 - 1)(4 - 3)} = \frac{(x - 1)(x - 3)}{(3)(1)}
-  $$
-
-  $$
-  \Rightarrow \quad \mathbf{L_2(x) = \frac{(x - 1)(x - 3)}{3}}
-  $$
-
----
-
-**Construcción y evaluación del polinomio $P_2(x)$:**
+**Cálculo de $L_0(x)$:**
 
 $$
-P_2(x) = \sum_{i=0}^{2} y_i L_i(x) = y_0 L_0(x) + y_1 L_1(x) + y_2 L_2(x)
+L_0(x) = \frac{(x - x_1)(x - x_2)}{(x_0 - x_1)(x_0 - x_2)} = \frac{(x - 3)(x - 4)}{(1 - 3)(1 - 4)} = \frac{(x - 3)(x - 4)}{(-2)(-3)}
 $$
 
 $$
-P_2(x) = 2 \left[ \frac{(x - 3)(x - 4)}{6} \right] + 6 \left[ -\frac{(x - 1)(x - 4)}{2} \right] + 24 \left[ \frac{(x - 1)(x - 3)}{3} \right]
+\Rightarrow \quad \mathbf{L_0(x) = \frac{(x - 3)(x - 4)}{6}}
+$$
+
+**Cálculo de $L_1(x)$:**
+
+$$
+L_1(x) = \frac{(x - x_0)(x - x_2)}{(x_1 - x_0)(x_1 - x_2)} = \frac{(x - 1)(x - 4)}{(3 - 1)(3 - 4)} = \frac{(x - 1)(x - 4)}{(2)(-1)}
 $$
 
 $$
-P_2(x) = \frac{(x - 3)(x - 4)}{3} - 3(x - 1)(x - 4) + 8(x - 1)(x - 3)
+\Rightarrow \quad \mathbf{L_1(x) = -\frac{(x - 1)(x - 4)}{2}}
+$$
+
+**Cálculo de $L_2(x)$:**
+
+$$
+L_2(x) = \frac{(x - x_0)(x - x_1)}{(x_2 - x_0)(x_2 - x_1)} = \frac{(x - 1)(x - 3)}{(4 - 1)(4 - 3)} = \frac{(x - 1)(x - 3)}{(3)(1)}
 $$
 
 $$
-P_2(x) = \frac{x^2 - 7x + 12}{3} - 3(x^2 - 5x + 4) + 8(x^2 - 4x + 3)
-$$
-
-$$
-\mathbf{P_2(x) = \frac{16}{3} x^2 - \frac{58}{3} x + 16}
-$$
-
-**Evaluado en $x = 2$:**
-
-$$
-P_2(2) = \frac{16}{3}(2)^2 - \frac{58}{3}(2) + 16 = -\frac{4}{3} \quad \Rightarrow \quad \mathbf{P_2(2) = -1.33333}
+\Rightarrow \quad \mathbf{L_2(x) = \frac{(x - 1)(x - 3)}{3}}
 $$
 
 ---
 
 **8.** Construir el polinomio de Lagrange con 2 nodos: $(x_0, y_0) = (2, 5)$ y $(x_1, y_1) = (5, 11)$, y evaluar en $x = 3$.
 
-- **Cálculo de $L_0(x)$:**
+**Cálculo de $L_0(x)$:**
 
-  $$
-  L_0(x) = \frac{x - x_1}{x_0 - x_1} = \frac{x - 5}{2 - 5} = \frac{5 - x}{3}
-  $$
+$$
+L_0(x) = \frac{x - x_1}{x_0 - x_1} = \frac{x - 5}{2 - 5} = \frac{5 - x}{3}
+$$
 
-- **Cálculo de $L_1(x)$:**
+**Cálculo de $L_1(x)$:**
 
-  $$
-  L_1(x) = \frac{x - x_0}{x_1 - x_0} = \frac{x - 2}{5 - 2} = \frac{x - 2}{3}
-  $$
+$$
+L_1(x) = \frac{x - x_0}{x_1 - x_0} = \frac{x - 2}{5 - 2} = \frac{x - 2}{3}
+$$
 
-- **Construcción de $P_1(x)$:**
+**Construcción de $P_1(x)$:**
 
-  $$
-  P_1(x) = y_0 L_0(x) + y_1 L_1(x) = 5 L_0(x) + 11 L_1(x)
-  $$
+$$
+P_1(x) = y_0 L_0(x) + y_1 L_1(x) = 5 L_0(x) + 11 L_1(x)
+$$
 
-  $$
-  P_1(x) = 5 \left( \frac{5 - x}{3} \right) + 11 \left( \frac{x - 2}{3} \right) = \frac{25 - 5x + 11x - 22}{3} = \frac{6x + 3}{3}
-  $$
+$$
+P_1(x) = 5 \left( \frac{5 - x}{3} \right) + 11 \left( \frac{x - 2}{3} \right) = \frac{25 - 5x + 11x - 22}{3} = \frac{6x + 3}{3}
+$$
 
-  $$
-  \Rightarrow \quad \mathbf{P_1(x) = 2x + 1}
-  $$
+$$
+\Rightarrow \quad \mathbf{P_1(x) = 2x + 1}
+$$
 
 **Evaluado en $x = 3$:**
 
@@ -926,36 +896,38 @@ $$
 
 **9.** Con 4 nodos: $(0, 1), (1, 2), (2, 5), (3, 10)$. Construir la base $L_1(x)$ y evaluar $P_3(1)$ para comprobación del nodo.
 
-- **Cálculo de $L_1(x)$:**
+**Cálculo de $L_1(x)$:**
 
-  $$
-  L_1(x) = \frac{(x - x_0)(x - x_2)(x - x_3)}{(x_1 - x_0)(x_1 - x_2)(x_1 - x_3)} = \frac{(x - 0)(x - 2)(x - 3)}{(1 - 0)(1 - 2)(1 - 3)} = \frac{x(x - 2)(x - 3)}{(1)(-1)(-2)}
-  $$
+$$
+L_1(x) = \frac{(x - x_0)(x - x_2)(x - x_3)}{(x_1 - x_0)(x_1 - x_2)(x_1 - x_3)} = \frac{(x - 0)(x - 2)(x - 3)}{(1 - 0)(1 - 2)(1 - 3)} = \frac{x(x - 2)(x - 3)}{(1)(-1)(-2)}
+$$
 
-  $$
-  \Rightarrow \quad \mathbf{L_1(x) = \frac{x(x - 2)(x - 3)}{2}}
-  $$
+$$
+\Rightarrow \quad \mathbf{L_1(x) = \frac{x(x - 2)(x - 3)}{2}}
+$$
 
-- **Propiedad delta de Kronecker:**
+**Propiedad delta de Kronecker:**
 
-  $$
-  L_i(x_j) = \delta_{ij} = \begin{cases} 1 & \text{si } i = j \\ 0 & \text{si } i \neq j \end{cases}
-  $$
+$$
+L_i(x_j) = \delta_{ij} = \begin{cases} 1 & \text{si } i = j \\ 0 & \text{si } i \neq j \end{cases}
+$$
 
-  - $x = 1 \Rightarrow L_1(1) = \dfrac{1(1 - 2)(1 - 3)}{2} = 1$
-  - $x = 0 \Rightarrow L_1(0) = 0$
-  - $x = 2 \Rightarrow L_1(2) = 0$
-  - $x = 3 \Rightarrow L_1(3) = 0$
+Comprobación para $L_1$:
 
-- **Evaluación de $P_3(1)$:**
+- $x = 1 \Rightarrow L_1(1) = \dfrac{1(1 - 2)(1 - 3)}{2} = 1$
+- $x = 0 \Rightarrow L_1(0) = 0$
+- $x = 2 \Rightarrow L_1(2) = 0$
+- $x = 3 \Rightarrow L_1(3) = 0$
 
-  $$
-  P_3(1) = y_0 L_0(1) + y_1 L_1(1) + y_2 L_2(1) + y_3 L_3(1)
-  $$
+**Evaluación de $P_3(1)$:**
 
-  $$
-  P_3(1) = 1(0) + 2(1) + 5(0) + 10(0) \quad \Rightarrow \quad \mathbf{P_3(1) = 2 = y_1}
-  $$
+$$
+P_3(1) = y_0 L_0(1) + y_1 L_1(1) + y_2 L_2(1) + y_3 L_3(1)
+$$
+
+$$
+P_3(1) = 1(0) + 2(1) + 5(0) + 10(0) \quad \Rightarrow \quad \mathbf{P_3(1) = 2 = y_1}
+$$
 
 ---
 
