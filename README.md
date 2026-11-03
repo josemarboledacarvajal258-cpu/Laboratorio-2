@@ -22,6 +22,7 @@ Si deseas ejecutar la aplicación localmente en tu equipo, asegúrate de estar u
 
 2. Ejecuta el servidor local de Streamlit con uno de los siguientes comandos (según la configuración de tu entorno de Python):
 
+```powershell
 python -m streamlit run app.py
 
 
