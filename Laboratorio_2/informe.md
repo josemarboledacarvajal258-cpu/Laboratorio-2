@@ -1022,16 +1022,16 @@ $$
 
 **Fórmula del tramo $S_i(x)$:**
 
-$$
+```math
 S_i(x) = \frac{M_i (x_{i+1} - x)^3}{6 h_i} + \frac{M_{i+1} (x - x_i)^3}{6 h_i} + \left( y_i - \frac{M_i h_i^2}{6} \right) \frac{x_{i+1} - x}{h_i} + \left( y_{i+1} - \frac{M_{i+1} h_i^2}{6} \right) \frac{x - x_i}{h_i}
-$$
+```
 
 Para $i = 0$ ($x \in [0, 1]$):
 
-$$
+```math
 S_0(x) = \frac{0(1 - x)^3}{6(1)} + \frac{-3(x - 0)^3}{6(1)} + \left( 0 - \frac{0(1)^2}{6} \right) (1 - x) + \left( 1 - \frac{-3(1)^2}{6} \right) x
-$$
+```
 
-$$
+```math
 S_0(x) = -\frac{3 x^3}{6} + \left( 1 + \frac{1}{2} \right) x \quad \Rightarrow \quad \mathbf{S_0(x) = -\frac{1}{2} x^3 + \frac{3}{2} x}
-$$
+```
